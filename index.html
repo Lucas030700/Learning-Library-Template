@@ -6,14 +6,14 @@
   <meta name="theme-color" content="#14283f">
   <meta name="description" content="Your personal offline-first learning library.">
   <link rel="manifest" href="./manifest.webmanifest">
-  <link rel="stylesheet" href="./styles.css?v=1">
+  <link rel="stylesheet" href="./styles.css?v=2">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css">
   <title>Learning Library</title>
 </head>
 <body>
   <header class="topbar">
     <a class="brand" href="./" aria-label="Learning Library home">
-      <span class="brand-mark">S</span>
+      <span class="brand-mark">L</span>
       <span><strong>Learning Library</strong><small>PERSONAL LEARNING LIBRARY</small></span>
     </a>
     <div class="topbar-tools"><button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode"><span class="theme-icon" aria-hidden="true">◐</span><span class="theme-label">Dark</span></button><span id="connection" class="connection"><i></i> Checking</span></div>
@@ -21,19 +21,22 @@
 
   <main class="shell">
     <div class="sticky-library-controls">
-    <section class="hero template-hero">
-      <div class="template-intro"><p class="eyebrow">YOUR LEARNING SPACE</p><h1>Learn something new.<br><em>Build understanding.</em></h1><p class="hero-copy">Your courses, complete lessons, practical examples, and learning progress in one place.</p></div>
-      <div class="progress-card"><div class="progress-heading"><span>YOUR PROGRESS</span><strong id="progress-count">0 / 0 topics</strong></div><div class="progress-track"><span id="progress-bar"></span></div><p id="progress-caption">Your learning progress will appear here.</p></div>
+    <section class="hero progress-hero" aria-label="Your learning progress">
+      <div class="progress-card">
+        <div class="progress-heading"><span>YOUR PROGRESS</span><strong id="progress-count">0 / 0 topics</strong></div>
+        <div class="progress-track"><span id="progress-bar"></span></div>
+        <p id="progress-caption">Your learning progress will appear here.</p>
+      </div>
     </section>
 
 
     <label class="searchbox">
       <span aria-hidden="true">⌕</span>
-      <input id="search" type="search" placeholder="Search modules, formulas, or glossary terms" autocomplete="off">
+      <input id="search" type="search" placeholder="Search modules or topics" autocomplete="off">
       <kbd>/</kbd>
     </label>
 
-    <nav class="library-tabs" role="tablist" aria-label="Academy sections">
+    <nav class="library-tabs" role="tablist" aria-label="Library sections">
       <button class="library-tab active" data-view="modules" role="tab" aria-selected="true">All modules</button>
       <button class="library-tab" data-view="formulas" role="tab" aria-selected="false">Formula library</button>
       <button class="library-tab" data-view="glossary" role="tab" aria-selected="false">Glossary</button>
@@ -79,6 +82,6 @@
   <script src="https://cdn.jsdelivr.net/npm/marked@15.0.7/marked.min.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" defer></script>
-  <script src="./app.js?v=1" defer></script>
+  <script src="./app.js?v=2" defer></script>
 </body>
 </html>
