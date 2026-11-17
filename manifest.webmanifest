@@ -1,0 +1,12 @@
+{
+  "name": "Learning Library",
+  "short_name": "Learn",
+  "description": "A reusable offline-first learning library",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f5f7fa",
+  "theme_color": "#14283f",
+  "orientation": "portrait",
+  "icons": []
+}
